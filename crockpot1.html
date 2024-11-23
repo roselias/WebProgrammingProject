@@ -4,29 +4,31 @@
         <title>Crockpot Apple Cider</title>
         <script src="scripts.js"></script>
         <link rel="stylesheet" href="stylesheet.css">
+	<!--Navigation bar-->
         <div id="navbar">
             <ul>
                 <li><a href="homepage.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Categories</a>
-                    <div class="dropdown-content">
-                        <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
-                        <a href="categories.html#SoupsSection">Soups</a>
-                        <a href="categories.html#DessertsSection">Desserts</a>
-                        <a href="categories.html#CasserolesSection">Casseroles</a>
-                        <a href="categories.html#CrockpotsSection">Crockpots</a>
-                        <a href="categories.html#Pastas">Pastas</a>
-                    </div>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Categories</a>
+                    	<!--Dropdown menu with each link jumping to specific setion of categories webpage-->
+			<div class="dropdown-content">
+                        	<a href="categories.html#SoupsSection">Soups</a>
+                        	<a href="categories.html#DessertsSection">Desserts</a>
+                        	<a href="categories.html#CasserolesSection">Casseroles</a>
+                        	<a href="categories.html#CrockpotsSection">Crockpots</a>
+                        	<a href="categories.html#Pastas">Pastas</a>
+                    	</div>
                 </li>
                 <li><a href="about.html">About Us</a></li>
             </ul>   
         </div>
-
-	    <h1>Crockpot Apple Cider</h1>
+	<!--Recipe title section-->
+	<div id ="recipeTitle">
+	    <h1>Broccoli Cheese Casserole</h1>
+	</div>
     </head>
     
     <body>
-        <!--image-->
+        <!--Recipe image section-->
         <div class="recipeImage">
             <img src="recipe images/Crockpot-Apple-Cider.jpg" alt="Apple Cider in a crockpot and glass cups">
         </div>
@@ -42,7 +44,7 @@
                 <li>1 orange, sliced</li>
             </ul>
         </div>
-        <!--Step-by-step section-->
+       <!--Instructions section-->
         <div class="instructions">
             <h3>Instructions:</h3>
             <ol>
@@ -50,10 +52,16 @@
                 <li>Place cider and brown sugar in a 3-qt. slow cooker; stir until sugar dissolves. Add spice bag. Place orange slices on top. Cover and cook on low for 2-3 hours or until heated through. Discard spice bag.</li>
             </ol>
         </div>
-	<button onclick="copyRecipe()">Copy Recipe</button>
+	<!--Button bar section-->
+	<div id="buttonBar">
+		<button onclick="copyRecipe()">Copy Recipe</button>
+	</div>
     </body>
 
     <footer>
-        <p>Original recipe can be found <a href="https://www.tasteofhome.com/recipes/slow-cooker-cider/">here.</a></p>
+	<!--Original credits section-->
+	<div id="credits">
+        	<p>Original recipe can be found <a href="https://www.tasteofhome.com/recipes/slow-cooker-cider/">here.</a></p>
+	</div>
     </footer>
 </html>
