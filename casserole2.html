@@ -4,34 +4,36 @@
         <title>Buffalo Chicken Casserole</title>
         <script src="scripts.js"></script>
         <link rel="stylesheet" href="stylesheet.css">
+	<!--Navigation bar-->
         <div id="navbar">
             <ul>
                 <li><a href="homepage.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Categories</a>
-                    <div class="dropdown-content">
-                        <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
-                        <a href="categories.html#SoupsSection">Soups</a>
-                        <a href="categories.html#DessertsSection">Desserts</a>
-                        <a href="categories.html#CasserolesSection">Casseroles</a>
-                        <a href="categories.html#CrockpotsSection">Crockpots</a>
-                        <a href="categories.html#Pastas">Pastas</a>
-                    </div>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Categories</a>
+                	 <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
+			<div class="dropdown-content">
+                        	<a href="categories.html#SoupsSection">Soups</a>
+                        	<a href="categories.html#DessertsSection">Desserts</a>
+                        	<a href="categories.html#CasserolesSection">Casseroles</a>
+                        	<a href="categories.html#CrockpotsSection">Crockpots</a>
+                        	<a href="categories.html#Pastas">Pastas</a>
+	                </div>
                 </li>
                 <li><a href="about.html">About Us</a></li>
             </ul>   
         </div>
-
+	<!--Recipe title section-->
+	<div id ="title">
 	    <h1>Buffalo Chicken Casserole</h1>
+	</div>
     </head>
     
     <body>
-        <!--image-->
+        <!--Recipe image section-->
         <div class="recipeImage">
             <img src="recipe images/Buffalo-Chicken-Casserole.png" alt="Casserole dish with Buffalo Chicken Casserole">
         </div>
         <!--Ingredients section-->
-        <div class="ingredients">
+        <div id="ingredients">
             <h3>Ingredients:</h3>
             <ul>
                 <li>1 pound uncooked penne pasta</li>
@@ -48,8 +50,8 @@
                 <li>Optional: Sliced green onions</li>
             </ul>
         </div>
-        <!--Step-by-step section-->
-        <div class="instructions">
+        <!--Instructions section-->
+        <div id="instructions">
             <h3>Instructions:</h3>
             <ol>
                 <li>Preheat oven to 350°. Cook pasta according to package directions; drain, set aside.</li>
@@ -58,10 +60,16 @@
                 <li>Bake, covered, 25-30 minutes or until heated through. Uncover; cook until cheese is browned, about 5 minutes longer. Let stand 5 minutes before serving. If desired, garnish with green onions.</li>
             </ol>
         </div>
-	<button onclick="copyRecipe()">Copy Recipe</button>
+	<!--Button bar section-->
+	<div id="buttonBar">
+		<button onclick="copyRecipe()">Copy Recipe</button>
+	</div>
     </body>
 
-    <footer>
-        <p>Original recipe can be found <a href="https://www.tasteofhome.com/recipes/buffalo-chicken-casserole/">here.</a></p>
+     <footer>
+	<!--Original credits section-->
+	<div id="credits">
+        	<p>Original recipe can be found <a href="https://www.allrecipes.com/recipe/25286/broccoli-cheese-casserole/">here.</a></p>
+	</div>
     </footer>
 </html>
