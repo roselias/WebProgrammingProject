@@ -4,34 +4,36 @@
         <title>Pineapple Sherbet</title>
         <script src="scripts.js"></script>
         <link rel="stylesheet" href="stylesheet.css">
+	<!--Navigation bar-->
         <div id="navbar">
             <ul>
                 <li><a href="homepage.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Categories</a>
-                    <div class="dropdown-content">
-                        <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
-                        <a href="categories.html#SoupsSection">Soups</a>
-                        <a href="categories.html#DessertsSection">Desserts</a>
-                        <a href="categories.html#CasserolesSection">Casseroles</a>
-                        <a href="categories.html#CrockpotsSection">Crockpots</a>
-                        <a href="categories.html#Pastas">Pastas</a>
-                    </div>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Categories</a>
+			<!--Dropdown menu with each link jumping to specific setion of categories webpage-->
+                    	<div class="dropdown-content">
+                        	<a href="categories.html#SoupsSection">Soups</a>
+                        	<a href="categories.html#DessertsSection">Desserts</a>
+                        	<a href="categories.html#CasserolesSection">Casseroles</a>
+                        	<a href="categories.html#CrockpotsSection">Crockpots</a>
+                        	<a href="categories.html#Pastas">Pastas</a>
+                   	</div>
                 </li>
                 <li><a href="about.html">About Us</a></li>
             </ul>   
         </div>
-
+	<!--Recipe title section-->
+	<div id ="recipeTitle">
 	    <h1>Pineapple Sherbet</h1>
+	</div>
     </head>
     
     <body>
-        <!--image-->
-        <div class="recipeImage">
+        <!--Recipe image section-->
+        <div id="recipeImage">
             <img src="recipe images/Pineapple-Sherbet_.png" alt="Pineapple Sherbet served in a tall cup.">
         </div>
         <!--Ingredients section-->
-        <div class="ingredients">
+        <div id="ingredients">
             <h3>Ingredients:</h3>
             <ul>
                 <li>2 cups cubed fresh pineapple</li>
@@ -40,18 +42,24 @@
                 <li>1/4 cup heavy whipping cream</li>
             </ul>
         </div>
-        <!--Step-by-step section-->
-        <div class="instructions">
+        <!--Instructions section-->
+        <div id="instructions">
             <h3>Instructions:</h3>
             <ol>
                 <li>Place pineapple, sugar and lemon juice in food processor or blender; puree until smooth. Add cream and puree until smooth, 1-2 minutes. Refrigerate until chilled, about 1 hour.</li>
                 <li>Fill cylinder of ice cream maker no more than two-thirds full; freeze according to the manufacturer’s directions. Transfer sherbet to freezer containers, allowing headspace for expansion. Freeze until firm, 8 hours or overnight.</li>
             </ol>
         </div>
-	<button onclick="copyRecipe()">Copy Recipe</button>
+	<!--Button bar section-->
+	<div id="buttonBar">
+		<button onclick="copyRecipe()">Copy Recipe</button>
+	</div>
     </body>
 
     <footer>
-        <p>Original recipe can be found <a href="https://www.tasteofhome.com/recipes/pineapple-sherbet-2/">here.</a></p>
+	<!--Original credits section-->
+	<div id="credits">
+        	<p>Original recipe can be found <a href="https://www.tasteofhome.com/recipes/pineapple-sherbet-2/">here.</a></p>
+	</div>
     </footer>
 </html>
