@@ -1,7 +1,7 @@
 function copyRecipe() {
   // Get the desired sections
-  const ingredientsSection = document.querySelector('.ingredients');
-  const instructionsSection = document.querySelector('.instructions');
+  const ingredientsSection = document.querySelector('#ingredients');
+  const instructionsSection = document.querySelector('#instructions');
 
   // Extract the text content of the sections.
   const ingredientsText = ingredientsSection.textContent;
