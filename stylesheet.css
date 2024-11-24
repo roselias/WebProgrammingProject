@@ -59,7 +59,7 @@
     text-align: left;
   }
       
-  .dropdown-content a:hover {background-color: #darkred;}
+  .dropdown-content a:hover {background-color: darkred;}
       
   .dropdown:hover .dropdown-content {
     display: block;
