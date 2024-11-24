@@ -3,40 +3,40 @@
 <html>
     <head>
         <title>Dish Delight</title>
-        
-        <link rel="stylesheet" href="/stylesheet.css">
+        <script src="../scripts.js"></script>
+        <link rel="stylesheet" href="../stylesheet.css">
         
         <section class="navbar">
             <ul>
-                <li><a href="/homepage.html">Home</a></li>
+                <li><a href="../homepage.html">Home</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Categories</a>
                     <div class="dropdown-content">
                         <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
-                        <a href="/categories.html#SoupsSection">Soups</a>
-                        <a href="/categories.html#DessertsSection">Desserts</a>
-                        <a href="/categories.html">Casseroles</a>
-                        <a href="/categories.html#CrockpotsSection">Crockpots</a>
-                        <a href="/categories.html#Pastas">Pastas</a>
+                        <a href="../categories.html#Soups">Soups</a>
+                        <a href="../categories.html#Desserts">Desserts</a>
+                        <a href="../categories.html#Casseroles">Casseroles</a>
+                        <a href="../categories.html#Crockpots">Crockpots</a>
+                        <a href="../categories.html#Pastas">Pastas</a>
                     </div>
                 </li>
-                <li><a href="/about.html">About Us</a></li>
+                <li><a href="../about.html">About Us</a></li>
                 <h1>Dish Delight</h1>
             </ul>
         </section>
-	<!--Recipe title section-->
-	<div id ="recipeTitle">
-	    <h1>Sausage Breakfast Casserole</h1>
-	</div>
     </head>
     
     <body>
+	<!--Recipe name section-->
+        <section class="recipe-title">
+            <h1>Sausage Breakfast Casserole</h1>
+        </section>
         <!--Recipe image section-->
-        <div id="recipeImage">
-            <img src="recipe images/Sausage-Breakfast-Casseroled.jpg" alt="Sausage Breakfast Casserole in a casserole dish">
-        </div>
+        <section class="recipe-image">
+            <img src="../RecipeImages/Sausage-Breakfast-Casseroled.jpg" alt="Sausage Breakfast Casserole in a casserole dish">
+        </section>
         <!--Ingredients section-->
-        <div id="ingredients">
+        <section class="ingredients">
             <h3>Ingredients:</h3>
             <ul>
                 <li>1 ½ pounds pork sausage</li>
@@ -53,9 +53,9 @@
                 <li>4 cups grated medium cheddar cheese</li>
                 <li>3 cups frozen shredded hash browns</li>
             </ul>
-        </div>
-       <!--Instructions section-->
-        <div id="instructions">
+        </section>
+        <!--Instructions section-->
+        <section class="instructions">
             <h3>Instructions:</h3>
             <ol>
                 <li>Preheat the oven to 350°F. Spray a 9 X 13-inch casserole dish with cooking spray and set aside.</li>
@@ -65,13 +65,13 @@
                 <li>Toss the cheddar cheese and frozen hash browns together in a bowl and add to the top of the casserole. Sprinkle with the rest of the sausage mixture.</li>
                 <li>Bake for 60-70 minutes or until the eggs are set in the middle and bubbling at the edges. If the casserole begins to brown too much, loosely tent foil over the top and continue to cook until the egg is set. Remove the casserole from the oven and let sit for about 10 minutes before cutting and serving.</li>
             </ol>
-        </div>
+        </section>
 	<!--Button bar section-->
 	<div id="buttonBar">
 		<button onclick="copyRecipe()">Copy Recipe</button>
 		<button onclick="printPage()">Print Page</button>
 		<button onclick="goBack()">Go Back</button>
-	</div>
+    	</div>
     </body>
 
     <footer>
@@ -80,4 +80,5 @@
         	<p>Original recipe can be found <a href="https://www.foodiecrush.com/sausage-breakfast-casserole/">here.</a></p>
 	</div>
     </footer>
+	
 </html>
