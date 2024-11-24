@@ -32,6 +32,7 @@
     text-align: center;
     padding: 1vw;
     text-decoration: none;
+    font-family: 'Pattaya';
   }
 
   li a:hover, .dropdown:hover .dropbtn {
@@ -57,6 +58,7 @@
     text-decoration: none;
     display: block;
     text-align: left;
+    font-family: 'Pattaya';
   }
       
   .dropdown-content a:hover {background-color: darkred;}
