@@ -237,7 +237,7 @@ body {
   }
 }
 
-.buttonBar {
+#buttonBar {
   background-color: #edd353;
   border-radius: 2vw;
   margin: 1vw;
@@ -273,5 +273,46 @@ body {
       color: white;
       border-radius: .5vw;
     }
+  }
+}
+
+/*About Us section*/
+#aboutWebsite {
+  background-color: #edd353;
+  border-radius: 2vw;
+  margin: 1vw;
+  padding: 1vw;
+  padding-left: 3vw;
+
+  h2 {
+    color: black;
+    font-family: 'Pattaya';
+    font-size: 3vw;
+  }
+
+  p {
+    color: black;
+    font-family: sans-serif;
+    font-size: 2vw;
+  }
+}
+
+#aboutUs {
+  background-color: #edd353;
+  border-radius: 2vw;
+  margin: 1vw;
+  padding: 1vw;
+  padding-left: 3vw;
+
+  h2 {
+    color: black;
+    font-family: 'Pattaya';
+    font-size: 3vw;
+  }
+
+  p {
+    color: black;
+    font-family: sans-serif;
+    font-size: 2vw;
   }
 }
