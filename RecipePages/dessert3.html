@@ -3,46 +3,46 @@
 <html>
     <head>
         <title>Dish Delight</title>
-        
-        <link rel="stylesheet" href="/stylesheet.css">
+        <script src="../scripts.js"></script>
+        <link rel="stylesheet" href="../stylesheet.css">
         
         <section class="navbar">
             <ul>
-                <li><a href="/homepage.html">Home</a></li>
+                <li><a href="../homepage.html">Home</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Categories</a>
                     <div class="dropdown-content">
                         <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
-                        <a href="/categories.html#SoupsSection">Soups</a>
-                        <a href="/categories.html#DessertsSection">Desserts</a>
-                        <a href="/categories.html">Casseroles</a>
-                        <a href="/categories.html#CrockpotsSection">Crockpots</a>
-                        <a href="/categories.html#Pastas">Pastas</a>
+                        <a href="../categories.html#Soups">Soups</a>
+                        <a href="../categories.html#Desserts">Desserts</a>
+                        <a href="../categories.html#Casseroles">Casseroles</a>
+                        <a href="../categories.html#Crockpots">Crockpots</a>
+                        <a href="../categories.html#Pastas">Pastas</a>
                     </div>
                 </li>
-                <li><a href="/about.html">About Us</a></li>
+                <li><a href="../about.html">About Us</a></li>
                 <h1>Dish Delight</h1>
             </ul>
         </section>
-	<!--Recipe title section-->
-	<div id ="recipeTitle">
-	    <h1>Oreo Cheesecake Cookies</h1>
-	</div>
     </head>
     
     <body>
+	<!--Recipe name section-->
+        <section class="recipe-title">
+            <h1>Oreo Cheesecake Cookies</h1>
+        </section>
         <!--Recipe image section-->
-        <div id="recipeImage">
-            <img src="recipe images/Oreo-Cheesecake-Cookies.jpg" alt="A plate of oreo cheescake cookies.">
-        </div>
+        <section class="recipe-image">
+            <img src="../RecipeImages/Oreo-Cheesecake-Cookies.jpg" alt="A plate of oreo cheescake cookies.">
+        </section>
         <!--Ingredients section-->
-        <div id="ingredients">
+        <section class="ingredients">
             <h3>Ingredients:</h3>
             <ul>
                 <li>4 ounces cream cheese, softened</li>
                 <li>2 tablespoons sour cream</li>
                 <li>2 tablespoons sugar</li>
-                <b>COOKIE DOUGH:</b>
+                <h4>Cookie dough:</h4>
                 <li>1 cup butter, softened</li>
                 <li>1 cup packed brown sugar</li>
                 <li>2 large eggs, room temperature</li>
@@ -53,9 +53,9 @@
                 <li>1/2 teaspoon baking powder</li>
                 <li>15 regular Oreo cookies, broken into quarters</li>
             </ul>
-        </div>
+        </section>
         <!--Instructions section-->
-        <div id="instructions">
+        <section class="instructions">
             <h3>Instructions:</h3>
             <ol>
                 <li>In a small bowl, combine cream cheese, sour cream and sugar until smooth. Measure by tablespoonfuls and freeze on a parchment-lined baking sheet.</li>
@@ -64,13 +64,13 @@
                 <li>Preheat oven to 350°. Place dough balls onto parchment-lined baking sheets about 4-in. apart.</li>
                 <li>Bake until edges and tops are browned, 15-20 minutes. Cool on a baking sheet for 5 minutes before removing from pans to wire rack. Store in the refrigerator.</li>
             </ol>
-        </div>
+        </section>
 	<!--Button bar section-->
 	<div id="buttonBar">
 		<button onclick="copyRecipe()">Copy Recipe</button>
 		<button onclick="printPage()">Print Page</button>
 		<button onclick="goBack()">Go Back</button>
-	</div>
+    	</div>
     </body>
 
     <footer>
@@ -79,4 +79,5 @@
         	<p>Original recipe can be found <a href="https://www.tasteofhome.com/recipes/oreo-cheesecake-cookies/">here.</a></p>
 	</div>
     </footer>
+	
 </html>
