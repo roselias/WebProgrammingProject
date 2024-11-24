@@ -1,39 +1,41 @@
 <!DOCTYPE html>
+
 <html>
     <head>
-        <title>Broccoli Cheese Casserole</title>
-        <script src="scripts.js"></script>
-        <link rel="stylesheet" href="stylesheet.css">
-	<!--Navigation bar-->
-        <div id="navbar">
+        <title>Dish Delight</title>
+        
+        <link rel="stylesheet" href="/stylesheet.css">
+        
+        <section class="navbar">
             <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Categories</a>
-			<!--Dropdown menu with each link jumping to specific setion of categories webpage-->
-			<div class="dropdown-content">
-                        	<a href="categories.html#SoupsSection">Soups</a>
-                        	<a href="categories.html#DessertsSection">Desserts</a>
-                        	<a href="categories.html#CasserolesSection">Casseroles</a>
-                        	<a href="categories.html#CrockpotsSection">Crockpots</a>
-                        	<a href="categories.html#Pastas">Pastas</a>
-                    	</div>
+                <li><a href="/homepage.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                        <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
+                        <a href="/categories.html#SoupsSection">Soups</a>
+                        <a href="/categories.html#DessertsSection">Desserts</a>
+                        <a href="/categories.html">Casseroles</a>
+                        <a href="/categories.html#CrockpotsSection">Crockpots</a>
+                        <a href="/categories.html#Pastas">Pastas</a>
+                    </div>
                 </li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>   
-        </div>
-	<!--Recipe title section-->
-	<div id ="recipeTitle">
-	    <h1>Broccoli Cheese Casserole</h1>
-	</div>
+                <li><a href="/about.html">About Us</a></li>
+                <h1>Dish Delight</h1>
+            </ul>
+        </section>
     </head>
     
     <body>
+        <section class="recipe-title">
+            <h1>Broccoli Cheese Casserole</h1>
+        </section>
         <!--Recipe image section-->
-        <div id="recipeImage">
-            <img src="recipe images/25286broccoli-cheese-casserole.png" alt="Broccoli Cheese Casserole on a serving spoon">
-        </div>
+        <section class="recipe-Image">
+            <img src="/recipe images/25286broccoli-cheese-casserole.png" alt="Broccoli Cheese Casserole on a serving spoon">
+        </section>
         <!--Ingredients section-->
-        <div id="ingredients">
+        <section class="ingredients">
             <h3>Ingredients:</h3>
             <ul>
                 <li>½ cup uncooked long-grain rice</li>
@@ -44,9 +46,9 @@
                 <li>1 cup milk</li>
                 <li>1 (16 ounce) jar processed cheese sauce</li>
             </ul>
-        </div>
+        </section>
         <!--Instructions section-->
-        <div id="instructions">
+        <section class="instructions">
             <h3>Instructions:</h3>
             <ol>
                 <li>Preheat oven to 350 degrees F (175 degrees C).</li>
@@ -55,13 +57,13 @@
                 <li>In a 9x13 inch baking dish combine cooked rice, bacon, onions, broccoli, soup, milk and cheese sauce.</li>
                 <li>Bake in preheated oven for 30 minutes, or until golden brown.</li>
             </ol>
-        </div>
+        </section>
 	<!--Button bar section-->
-	<div id="buttonBar">
+	<section class="buttonBar">
 		<button onclick="copyRecipe()">Copy Recipe</button>
 		<button onclick="printPage()">Print Page</button>
 		<button onclick="goBack()">Go Back</button>
-	</div>
+    </section>
     </body>
 
     <footer>
