@@ -3,40 +3,40 @@
 <html>
     <head>
         <title>Dish Delight</title>
-        
-        <link rel="stylesheet" href="/stylesheet.css">
+        <script src="../scripts.js"></script>
+        <link rel="stylesheet" href="../stylesheet.css">
         
         <section class="navbar">
             <ul>
-                <li><a href="/homepage.html">Home</a></li>
+                <li><a href="../homepage.html">Home</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Categories</a>
                     <div class="dropdown-content">
                         <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
-                        <a href="/categories.html#SoupsSection">Soups</a>
-                        <a href="/categories.html#DessertsSection">Desserts</a>
-                        <a href="/categories.html">Casseroles</a>
-                        <a href="/categories.html#CrockpotsSection">Crockpots</a>
-                        <a href="/categories.html#Pastas">Pastas</a>
+                        <a href="../categories.html#Soups">Soups</a>
+                        <a href="../categories.html#Desserts">Desserts</a>
+                        <a href="../categories.html#Casseroles">Casseroles</a>
+                        <a href="../categories.html#Crockpots">Crockpots</a>
+                        <a href="../categories.html#Pastas">Pastas</a>
                     </div>
                 </li>
-                <li><a href="/about.html">About Us</a></li>
+                <li><a href="../about.html">About Us</a></li>
                 <h1>Dish Delight</h1>
             </ul>
         </section>
-	<!--Recipe title section-->
-	<div id ="recipeTitle">
-	    <h1>Pozole Rojo (Authentic Mexican Pork & Hominy Stew)</h1>
-	</div>
     </head>
     
     <body>
+	<!--Recipe name section-->
+        <section class="recipe-title">
+            <h1>Pozole Rojo (Authentic Mexican Pork & Hominy Stew)</h1>
+        </section>
         <!--Recipe image section-->
-        <div id="recipeImage">
-            <img src="recipe images/pozole rojo.jpg" alt="A bowl of Pozole Rojo with toppings">
-        </div>
+        <section class="recipe-image">
+           <img src="../RecipeImages/pozole rojo.jpg" alt="A bowl of Pozole Rojo with toppings">
+        </section>
         <!--Ingredients section-->
-        <div id="ingredients">
+        <section class="ingredients">
             <h3>Ingredients:</h3>
             <ul>
                 <li>4 dried guajillo chiles</li>
@@ -54,9 +54,9 @@
                 <li>8 cups (64 ounces) chicken broth</li>
                 <li>Thinly sliced cabbage, sliced radish, sliced jalapeños, cotija cheese, chopped avocado, lime wedges & fresh chopped cilantro, as desired.</li>
             </ul>
-        </div>
+        </section>
         <!--Instructions section-->
-        <div id="instructions">
+        <section class="instructions">
             <h3>Instructions:</h3>
             <ol>
                 <li>Prep the chiles: Cut the stems off the guajillo and ancho chiles. Then shake out the inner seeds within each chile and place them into a large bowl. Cover the chiles with boiling water (ensuring they’re fully submerged) and set aside for the chiles to soak and rehydrate. Meanwhile, move on with the recipe.</li>
@@ -65,13 +65,13 @@
                 <li>Blend the chiles: Back to the soaked chiles, place the soaked chiles into the body of a high-powered blender or food processor along with 1 cup of the soaking liquid- do not discard remaining though. Pulse to combine until the chiles are completely smooth. Add in a splash more of the soaking liquid if the mixture is too thick (or to help swish/clean out the blender/processor).</li>
                 <li>Afterward, transfer the browned pork into the pot with any residual juices that have been collected into a large slow cooker vessel (at least 6-quarts). Add the blended chile mixture into the pot along with the cumin, oregano, chipotle powder (if using), bay leaves, hominy, and broth. Stir until fully combined. Cook on low for 6-8 hours or on high for 4-5 hours- stirring the pozole every so often. Then serve with desired toppings.</li>
             </ol>
-        </div>
+        </section>
 	<!--Button bar section-->
 	<div id="buttonBar">
 		<button onclick="copyRecipe()">Copy Recipe</button>
 		<button onclick="printPage()">Print Page</button>
 		<button onclick="goBack()">Go Back</button>
-	</div>
+    	</div>
     </body>
 
     <footer>
@@ -80,4 +80,5 @@
         	<p>Original recipe can be found <a href="https://www.butterbeready.com/pozole-rojo/">here.</a></p>
 	</div>
     </footer>
+	
 </html>
