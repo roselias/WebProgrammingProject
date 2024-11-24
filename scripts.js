@@ -22,3 +22,11 @@ function copyRecipe() {
   // Provide feedback to the user.
   alert('Recipe text copied to clipboard!');
 }
+
+function printPage() {
+  window.print();
+}
+
+function goBack() {
+  window.history.back();
+}
