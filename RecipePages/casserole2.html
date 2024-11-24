@@ -3,40 +3,40 @@
 <html>
     <head>
         <title>Dish Delight</title>
-        
-        <link rel="stylesheet" href="/stylesheet.css">
+        <script src="../scripts.js"></script>
+        <link rel="stylesheet" href="../stylesheet.css">
         
         <section class="navbar">
             <ul>
-                <li><a href="/homepage.html">Home</a></li>
+                <li><a href="../homepage.html">Home</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Categories</a>
                     <div class="dropdown-content">
                         <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
-                        <a href="/categories.html#SoupsSection">Soups</a>
-                        <a href="/categories.html#DessertsSection">Desserts</a>
-                        <a href="/categories.html">Casseroles</a>
-                        <a href="/categories.html#CrockpotsSection">Crockpots</a>
-                        <a href="/categories.html#Pastas">Pastas</a>
+                        <a href="../categories.html#Soups">Soups</a>
+                        <a href="../categories.html#Desserts">Desserts</a>
+                        <a href="../categories.html#Casseroles">Casseroles</a>
+                        <a href="../categories.html#Crockpots">Crockpots</a>
+                        <a href="../categories.html#Pastas">Pastas</a>
                     </div>
                 </li>
-                <li><a href="/about.html">About Us</a></li>
+                <li><a href="../about.html">About Us</a></li>
                 <h1>Dish Delight</h1>
             </ul>
         </section>
-	<!--Recipe title section-->
-	<div id ="title">
-	    <h1>Buffalo Chicken Casserole</h1>
-	</div>
     </head>
     
     <body>
+	<!--Recipe name section-->
+        <section class="recipe-title">
+            <h1>Buffalo Chicken Casserole</h1>
+        </section>
         <!--Recipe image section-->
-        <div id="recipeImage">
-            <img src="recipe images/Buffalo-Chicken-Casserole.png" alt="Casserole dish with Buffalo Chicken Casserole">
-        </div>
+        <section class="recipe-image">
+            <img src="../RecipeImages/Buffalo-Chicken-Casserole.png" alt="Casserole dish with Buffalo Chicken Casserole">
+        </section>
         <!--Ingredients section-->
-        <div id="ingredients">
+        <section class="ingredients">
             <h3>Ingredients:</h3>
             <ul>
                 <li>1 pound uncooked penne pasta</li>
@@ -52,9 +52,9 @@
                 <li>1/4 cup crumbled blue cheese</li>
                 <li>Optional: Sliced green onions</li>
             </ul>
-        </div>
+        </section>
         <!--Instructions section-->
-        <div id="instructions">
+        <section class="instructions">
             <h3>Instructions:</h3>
             <ol>
                 <li>Preheat oven to 350°. Cook pasta according to package directions; drain, set aside.</li>
@@ -62,16 +62,16 @@
                 <li>In a small bowl, combine ranch dressing, sour cream and buffalo sauce. Pour sauce over chicken and pasta mixture; toss to coat. Transfer to a greased 13x9-in. baking dish. Sprinkle with mozzarella and blue cheese.</li>
                 <li>Bake, covered, 25-30 minutes or until heated through. Uncover; cook until cheese is browned, about 5 minutes longer. Let stand 5 minutes before serving. If desired, garnish with green onions.</li>
             </ol>
-        </div>
+        </section>
 	<!--Button bar section-->
 	<div id="buttonBar">
 		<button onclick="copyRecipe()">Copy Recipe</button>
 		<button onclick="printPage()">Print Page</button>
 		<button onclick="goBack()">Go Back</button>
-	</div>
+    	</div>
     </body>
 
-     <footer>
+    <footer>
 	<!--Original credits section-->
 	<div id="credits">
         	<p>Original recipe can be found <a href="https://www.tasteofhome.com/recipes/buffalo-chicken-casserole/">here.</a></p>
