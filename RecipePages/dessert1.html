@@ -3,47 +3,47 @@
 <html>
     <head>
         <title>Dish Delight</title>
-        
-        <link rel="stylesheet" href="/stylesheet.css">
+        <script src="../scripts.js"></script>
+        <link rel="stylesheet" href="../stylesheet.css">
         
         <section class="navbar">
             <ul>
-                <li><a href="/homepage.html">Home</a></li>
+                <li><a href="../homepage.html">Home</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Categories</a>
                     <div class="dropdown-content">
                         <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
-                        <a href="/categories.html#SoupsSection">Soups</a>
-                        <a href="/categories.html#DessertsSection">Desserts</a>
-                        <a href="/categories.html">Casseroles</a>
-                        <a href="/categories.html#CrockpotsSection">Crockpots</a>
-                        <a href="/categories.html#Pastas">Pastas</a>
+                        <a href="../categories.html#Soups">Soups</a>
+                        <a href="../categories.html#Desserts">Desserts</a>
+                        <a href="../categories.html#Casseroles">Casseroles</a>
+                        <a href="../categories.html#Crockpots">Crockpots</a>
+                        <a href="../categories.html#Pastas">Pastas</a>
                     </div>
                 </li>
-                <li><a href="/about.html">About Us</a></li>
+                <li><a href="../about.html">About Us</a></li>
                 <h1>Dish Delight</h1>
             </ul>
         </section>
-	<!--Recipe title section-->
-	<div id ="recipeTitle">
-	    <h1>Earl Grey Cake</h1>
-	</div>
     </head>
     
     <body>
+	<!--Recipe name section-->
+        <section class="recipe-title">
+            <h1>Earl Grey Cake</h1>
+        </section>
         <!--Recipe image section-->
-        <div id="recipeImage">
-            <img src="recipe images/Earl-Grey-Cake.png" alt="Earl grey cake with a slice laying on serving plate.">
-        </div>
+        <section class="recipe-image">
+            <img src="../RecipeImages/Earl-Grey-Cake.png" alt="Earl grey cake with a slice laying on serving plate.">
+        </section>
         <!--Ingredients section-->
-        <div id="ingredients">
+        <section class="ingredients">
             <h3>Ingredients:</h3>
             <ul>
-                <b>SIMPLE SYRUP:</b>
+                <h4>Simple Syrup:</h4>
                 <li>1/2 cup sugar</li>
                 <li>1/2 cup water</li>
                 <li>2 Earl Grey tea bags</li>
-                <b>CAKE:</b>
+                <h4>Cake:</h4>
                 <li>3/4 cup 2% milk</li>
                 <li>3 Earl Grey tea bags, divided</li>
                 <li>3/4 cup unsalted butter, softened</li>
@@ -53,15 +53,15 @@
                 <li>2-1/3 cups all-purpose flour</li>
                 <li>2-1/2 teaspoons baking powder</li>
                 <li>1/2 teaspoon salt</li>
-                <b>FROSTING:</b>
+                <h4>Frosting:</h4>
                 <li>1 cup unsalted butter, softened</li>
                 <li>1 tablespoon vanilla extract</li>
                 <li>2-1/2 cups confectioners' sugar</li>
                 <li>1 tablespoon 2% milk</li>
             </ul>
-        </div>
+        </section>
         <!--Instructions section-->
-        <div id="instructions">
+        <section class="instructions">
             <h3>Instructions:</h3>
             <ol>
                 <li>Preheat oven to 350°. Line bottoms of 2 greased 9-in. round baking pans with parchment; grease parchment.</li>
@@ -72,13 +72,13 @@
                 <li>For frosting, in a small bowl, beat butter and vanilla until blended. Gradually beat in confectioners' sugar until smooth.</li>
                 <li>To assemble cake, brush each layer with earl grey simple syrup; top middle with 1/2 cup frosting. Stack layers on top of each other; spread top and sides with remaining frosting. Slice and serve.</li>
             </ol>
-        </div>
+        </section>
 	<!--Button bar section-->
 	<div id="buttonBar">
 		<button onclick="copyRecipe()">Copy Recipe</button>
 		<button onclick="printPage()">Print Page</button>
 		<button onclick="goBack()">Go Back</button>
-	</div>
+    	</div>
     </body>
 
     <footer>
@@ -87,4 +87,5 @@
         	<p>Original recipe can be found <a href="https://www.tasteofhome.com/recipes/earl-grey-cake/">here.</a></p>
 	</div>
     </footer>
+	
 </html>
