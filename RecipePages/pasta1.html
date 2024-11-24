@@ -3,40 +3,40 @@
 <html>
     <head>
         <title>Dish Delight</title>
-        
-        <link rel="stylesheet" href="/stylesheet.css">
+        <script src="../scripts.js"></script>
+        <link rel="stylesheet" href="../stylesheet.css">
         
         <section class="navbar">
             <ul>
-                <li><a href="/homepage.html">Home</a></li>
+                <li><a href="../homepage.html">Home</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Categories</a>
                     <div class="dropdown-content">
                         <!--Dropdown menu with each link jumping to specific setion of categories webpage-->
-                        <a href="/categories.html#SoupsSection">Soups</a>
-                        <a href="/categories.html#DessertsSection">Desserts</a>
-                        <a href="/categories.html">Casseroles</a>
-                        <a href="/categories.html#CrockpotsSection">Crockpots</a>
-                        <a href="/categories.html#Pastas">Pastas</a>
+                        <a href="../categories.html#Soups">Soups</a>
+                        <a href="../categories.html#Desserts">Desserts</a>
+                        <a href="../categories.html#Casseroles">Casseroles</a>
+                        <a href="../categories.html#Crockpots">Crockpots</a>
+                        <a href="../categories.html#Pastas">Pastas</a>
                     </div>
                 </li>
-                <li><a href="/about.html">About Us</a></li>
+                <li><a href="../about.html">About Us</a></li>
                 <h1>Dish Delight</h1>
             </ul>
         </section>
-	<!--Recipe title section-->
-	<div id ="recipeTitle">
-	    <h1>Green Spaghetti (Espagueti Verde)</h1>
-	</div>
     </head>
     
     <body>
+	<!--Recipe name section-->
+        <section class="recipe-title">
+            <h1>Green Spaghetti (Espagueti Verde)</h1>
+        </section>
         <!--Recipe image section-->
-        <div id="recipeImage">
-            <img src="recipe images/Green-Spaghetti.jpg" alt="A bowl of green spaghetti.">
-        </div>
+        <section class="recipe-image">
+            <img src="../RecipeImages/Green-Spaghetti.jpg" alt="A bowl of green spaghetti.">
+        </section>
         <!--Ingredients section-->
-        <div id="ingredients">
+        <section class="ingredients">
             <h3>Ingredients:</h3>
             <ul>
                 <li>4 poblano peppers</li>
@@ -52,22 +52,22 @@
                 <li>2 tablespoons butter</li>
                 <li>Crumbled Cotija cheese or queso fresco</li>
             </ul>
-        </div>
+        </section>
         <!--Instructions section-->
-        <div id="instructions">
+        <section class="instructions">
             <h3>Instructions:</h3>
             <ol>
                 <li>Place peppers on a foil-lined baking sheet. Broil 4 in. from heat until skins blister, about 5 minutes. With tongs, rotate peppers a quarter turn. Broil and rotate until all sides are blistered and blackened. Immediately place peppers in a large bowl; let stand, covered, 20 minutes.</li>
                 <li>Cook spaghetti according to package directions. Meanwhile, peel off charred skin from peppers and remove stems and seeds; discard. Chop peppers. Transfer to a blender. Add cream cheese, onion, sour cream, cilantro, stock, garlic, salt and pepper. Cover and blend until smooth.</li>
                 <li>Melt butter in a large skillet over medium heat; add pepper mixture. Cook and stir until heated through, about 3 minutes. Drain spaghetti; stir into sauce. Serve with Cotija cheese and additional cilantro.</li>
             </ol>
-        </div>
+        </section>
 	<!--Button bar section-->
 	<div id="buttonBar">
 		<button onclick="copyRecipe()">Copy Recipe</button>
 		<button onclick="printPage()">Print Page</button>
 		<button onclick="goBack()">Go Back</button>
-	</div>
+    	</div>
     </body>
 
     <footer>
@@ -76,4 +76,5 @@
         	<p>Original recipe can be found <a href="https://www.tasteofhome.com/recipes/green-spaghetti-recipe/">here.</a></p>
 	</div>
     </footer>
+	
 </html>
